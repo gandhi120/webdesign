@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstore|E-commers web-Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./images/fit3.png" height="30px" width="70px">
+            </div>
+    
+            <nav>
+                <ul id="Menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="acount.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="./images/fit3.png" height="30px" width="30px">
+            <img src="./images/fit3.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+ <!------------Single product Details------>
+<div class="small_container    single_product">
+    <div class="row">
+        <div class="col_2">
+            <img src="./images/lp img/lp5.jpg" id="ProductImg" width="80%" height="80%" class="productmainimg">
+            <!--small images row start-->
+            <div class="small_img_row">
+                  <div class="small_img_col">
+                      <img src="./images/lp img/lp4.jpg" width="100%" class="small_img">
+                  </div>                
+                  <div class="small_img_col">
+                      <img src="./images/lp img/lp1.jpg" width="100%" class="small_img">
+                  </div>                
+                  <div class="small_img_col">
+                      <img src="./images/lp img/lp2.jpg" width="100%" class="small_img">
+                  </div>                
+                  <div class="small_img_col">
+                      <img src="./images/lp img/lp6.jpg" width="100%" class="small_img">
+                  </div>                
+            </div>
+        </div>
+        <div class="col_2">
+            <p>Home/T-shirt</p>
+            <h2>Black-printed T-shirt</h2>
+            <h4>$50.00</h4>
+            <select name="" id="">
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <div class="btn">Add To Cart</div>
+
+            <h3>Detail Product</h3>
+            <br>
+            <p>Give your summer wardrobe a style upgrade with hrx
+                women's T-shirt .Team with a pair of shorts for 
+                your regular day and black denim for an evening 
+                out with the guys.
+            </p>
+        </div>
+    </div>
+</div>
+<!-------Title---------------------->
+<div class="small_container">
+    <div class="row row_2">
+        <h2>Releted Products</h2>
+        <p>view more</p>
+    </div>
+</div>
+<!-----Product------------------------->
+<div class="small_container">
+    <div class="row">
+        <div class="col_4">
+            <img src="./images/fp img/fp1.jpg" height="220px">
+            <h4>Red Printed-Tishirt</h4>
+            <p>$59.00</p>
+        </div>
+        <div class="col_4">
+            <img src="./images/fp img/fp2.jpg">
+            <h4>Red Printed-Tishirt</h4>
+            <p>$59.00</p>
+        </div>
+        <div class="col_4">
+            <img src="./images/fp img/fp3.jpg">
+            <h4>Red Printed-Tishirt</h4>
+            <p>$59.00</p>
+        </div>
+        <div class="col_4">
+            <img src="./images/fp img/fp4.jpg">
+            <h4>Red Printed-Tishirt</h4>
+            <p>$59.00</p>
+        </div>
+    </div>
+    </div>
+   
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer_col_1">
+                <h3>Download our App</h3>
+                <p>Download our app for android and ios mob.</p>
+                <div class="app-logo">
+                    <img src="./images/fit3.png">
+                    <img src="./images/fit3.png">
+                </div>
+            </div>            
+            <div class="footer_col_2">
+             <img src="./images/fit3.png">
+                <p>our purpose to sustainably make the pleasure and
+                    benifits of sport.
+                </p>
+            </div>
+            <div class="footer_col_3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupns</li>
+                    <li>Blog spot</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div> 
+            <div class="footer_col_4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>You Tube</li>
+                </ul>
+            </div>                                               
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright vk-2020</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var Menuitems=document.getElementById(Menuitems);
+    Menuitems.style.maxHeight ="0px";
+    function menutoggle(){
+        if(   Menuitems.style.maxHeight=="0px"){
+            Menuitems.style.maxHeight ="200px";
+
+        }else{
+            Menuitems.style.maxHeight ="0px";
+        }
+    }
+
+</script>
+<!---------js for product gallery---------->
+<script>
+    var ProductImg=document.getElementById("ProductImg");
+    var SmallImg=document.getElementsByClassName("small_img");
+
+    SmallImg[0].onclick=function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick=function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick=function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick=function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+</body>
+</html>
