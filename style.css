@@ -497,19 +497,25 @@ form .btn:focus{
         margin-right:50px ;
         margin-bottom: 10px;
         text-align: center;
-        overflow: hidden;
+        overflow:hidden;
+        
         
     }
     .menu-icon{
         display: block;
         cursor: pointer;
+        
     }
 }
 
 /*---media query less then 600px*/
 @media screen and (max-width:600px){
+     
+
+
     .row{
         text-align: center;
+        margin: 10px;
     }
 
     .col_2,.col_3,.col_4,.col_5{
@@ -532,4 +538,8 @@ form .btn:focus{
        font-size: 26px;
        line-height: 20px;
    }
-}
+   .brand .col_5 img{
+       margin-bottom: 10px;
+     
+   }
+   }
